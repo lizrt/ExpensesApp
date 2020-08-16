@@ -1,0 +1,16 @@
+
+<mat-card>
+    <span>Sign In</span>
+    <br>
+    <!-- <form [formGroup]="registerform" (ngSubmit)="onSubmit()"> -->
+        <mat-form-field  >
+            <input matInput placeholder="UserName" [(ngModel)]="loginData.userName" type="text">
+        </mat-form-field>
+        <br>
+        <mat-form-field  >
+            <input matInput placeholder="Password" [(ngModel)]="loginData.password" type="Password">
+        </mat-form-field>
+        <br>
+            <button class="mat-raised-button mat-primary" color="primary" (click)="login()">Login</button>
+    <!-- </form> -->
+</mat-card>

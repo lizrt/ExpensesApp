@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Are you sure you want to delete this entry?</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item>
+                <b>Description:</b>{{entry.description}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <b>Value:</b>{{entry.value}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <b>Entry Type:</b>{{entry.isExpense}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </mat-list>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-flat-button (click)="cancel()" color="primary"><b>Cancel</b></button>  
+        <button mat-raised-button (click)="confirm()" color="warn"><b>Delete Entry</b></button>  
+
+    </mat-card-actions>
+</mat-card>
