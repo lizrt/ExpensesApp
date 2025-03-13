@@ -36,7 +36,7 @@ namespace ExpensesAPI.Controllers
                 var exists = _context.Users.Any(n => n.UserName == user.UserName && n.Password == user.Password);
                 if (exists)
                     return Ok(CreateToken(user));
-                return BadRequest("wrong credentials");
+                return BadRequest("Incorrect credentials");
 
             }
             catch (Exception ex)
